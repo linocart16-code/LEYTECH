@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEYTECH</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script>
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('keydown', e => {
+      if (e.key === 'F12' ||
+          (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase())) ||
+          (e.ctrlKey && e.key.toUpperCase() === 'U')) {
+        e.preventDefault();
+        return false;
+      }
+    });
+  </script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="assets/logo.png" alt="LEYTECH Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger"><i class="fa fa-bars"></i></div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>We Build Creative Digital Experiences</h1>
+      <p>Websites, visuals, and branding for modern businesses.</p>
+      <a href="#services" class="btn">Explore Services</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about fade-in">
+    <h2>About Us</h2>
+    <p>LEYTECH is a creative agency from Tacloban City, Leyte, founded by <h4>Lino Cart Cabillos</h4>We specialize in web development, design, and multimedia solutions, combining creativity and technology to deliver impactful digital experiences.</p>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service-card"><i class="fa fa-code"></i><h3>Web Development</h3></div>
+      <div class="service-card"><i class="fa fa-video"></i><h3>Videography</h3></div>
+      <div class="service-card"><i class="fa fa-camera"></i><h3>Photography</h3></div>
+      <div class="service-card"><i class="fa fa-film"></i><h3>Video Editing</h3></div>
+      <div class="service-card"><i class="fa fa-image"></i><h3>Photo Editing</h3></div>
+      <div class="service-card"><i class="fa fa-paint-brush"></i><h3>Graphic Design</h3></div>
+      <div class="service-card"><i class="fa fa-bullhorn"></i><h3>Branding</h3></div>
+      <div class="service-card"><i class="fa fa-scroll"></i><h3>Tarpaulin Layout</h3></div>
+      <div class="service-card"><i class="fa fa-share-alt"></i><h3>Social Media Design</h3></div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+<section id="portfolio" class="portfolio">
+  <h2>Sample Works</h2>
+
+  <!-- Filter Buttons -->
+  <div class="portfolio-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="web">Web</button>
+    <button class="filter-btn" data-filter="photo">Photo</button>
+    <button class="filter-btn" data-filter="video">Video</button>
+    <button class="filter-btn" data-filter="design">Design</button>
+  </div>
+
+  <!-- Portfolio Grid -->
+  <div class="portfolio-grid">
+    <div class="portfolio-item web fade-in">
+      <img src="assets/website.png" alt="Web Project">
+      <h3>Website</h3>
+    </div>
+    <div class="portfolio-item photo fade-in">
+      <img src="assets/photos.png" alt="Photography">
+      <h3>Photography Shoots</h3>
+    </div>
+    <div class="portfolio-item video fade-in">
+  <video controls>
+    <source src="assets/vid.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <h3>Video Editing</h3>
+</div>
+    <div class="portfolio-item design fade-in">
+      <img src="assets/graphics.jpg" alt="Graphic Design">
+      <h3>Brand Designing</h3>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Team -->
+<section id="team" class="team">
+  <h2>Meet the Team</h2>
+  <div class="team-grid">
+    <div class="team-member">
+      <img src="assets/team1.png" alt="Employee 1">
+      <h3>Lino Cart Cabillos</h3>
+      <p>Founder</p>
+      <p>Web Developer</p>
+      <p>Graphic Designer</p>
+      <p>Videographer</p>
+      <p>Photographer</p>
+    </div>
+    <div class="team-member">
+      <img src="assets/team2.png" alt="Employee 2">
+      <h3>Jairus Ochea</h3>
+      <p>Graphic Designer</p>
+      <p>Videographer</p>
+      <p>Video Editor</p>
+      <p>Photographer</p>
+    </div>
+    <div class="team-member">
+      <img src="assets/team3.png" alt="Employee 3">
+      <h3>Princess Margel Yape</h3>
+      <p>Graphic Designer</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Stats / Counters -->
+<section id="stats" class="stats">
+  <h2>Our Achievements</h2>
+  <div class="stats-grid">
+    <div class="stat">
+      <span class="counter" data-target="20">0</span>
+      <p>Projects Completed</p>
+    </div>
+    <div class="stat">
+      <span class="counter" data-target="30">0</span>
+      <p>Happy Clients</p>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="skills">
+  <h2>Our Skills</h2>
+  <div class="skill">
+    <p>Graphic Design</p>
+    <div class="progress-bar"><div class="progress" data-progress="90"></div></div>
+  </div>
+  <div class="skill">
+    <p>Photo and Video Editing</p>
+    <div class="progress-bar"><div class="progress" data-progress="80"></div></div>
+  </div>
+  <div class="skill">
+    <p>Web Development</p>
+    <div class="progress-bar"><div class="progress" data-progress="70"></div></div>
+  </div>
+</section>
+
+
+   <section id="contact" class="contact-section">
+  <h2>Contact Us</h2>
+  
+  <div class="contact-wrapper">
+    <div class="contact-details">
+      <p><i class="fas fa-map-marker-alt"></i> Tacloban City, Leyte, Philippines</p>
+      <p><i class="fas fa-phone"></i> +63 994 2463 239</p>
+      <p><i class="fas fa-envelope"></i>leytech6@gmail.com</p>
+    </div>
+
+   <form id="contact-form" class="contact-form-box">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit" class="form-btn">Send Message</button>
+  <p class="form-success">✅ Message Sent Successfully!</p>
+</form>
+</div>
+</section>
+
+<script>
+const contactForm = document.getElementById('contact-form');
+const submitButton = contactForm.querySelector('.form-btn');
+const successMessage = contactForm.querySelector('.form-success');
+
+contactForm.addEventListener('submit', async function(e) {
+  e.preventDefault();
+
+  submitButton.disabled = true;
+  submitButton.classList.add('sending');
+  submitButton.textContent = 'Sending...';
+  successMessage.style.display = 'none';
+
+  const formData = {
+    name: this.name.value,
+    email: this.email.value,
+    message: this.message.value
+  };
+
+  try {
+    const response = await fetch('/send', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData)
+    });
+
+    const result = await response.json().catch(() => ({}));
+
+    if (response.ok && result.success) {
+      this.reset();
+      successMessage.style.display = 'block';
+    } else {
+      alert('❌ Error sending message. ' + (result.error || 'Please try again.'));
+    }
+  } catch (error) {
+    alert('❌ Error sending message. Please try again.');
+  } finally {
+    submitButton.disabled = false;
+    submitButton.classList.remove('sending');
+    submitButton.textContent = 'Send Message';
+  }
+});
+</script>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="assets/logo.png" alt="LEYTECH Logo">
+    </div>
+    <p>&copy; 2026 LEYTECH. All rights reserved.</p>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/profile.php?id=61575309583451"><i class="fab fa-facebook-f"></i></a>
+    </div>
+  </div>
+</footer>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
