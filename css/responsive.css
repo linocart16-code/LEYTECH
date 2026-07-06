@@ -32,9 +32,28 @@
   .navbar.scrolled .hamburger {
     color: #0B6BCB;
   }
+
+  .nav-links a,
+  .nav-links a:hover,
+  .nav-links a:focus,
+  .navbar.scrolled .nav-links a,
+  .navbar.scrolled .nav-links a:hover,
+  .navbar.scrolled .nav-links a:focus {
+    color: #fff;
+  }
 }
 
 @media (max-width: 768px) {
+  .hero {
+    background-position: center;
+    padding: 0 16px;
+  }
+
+  .hero-content {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
   .hero h1 {
     font-size: 2rem;
   }

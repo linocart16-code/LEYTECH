@@ -80,12 +80,14 @@ a {
 
 /* Hero Section */
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   text-align: left;
   background: url("../assets/bg.png") no-repeat center center/cover;
+  background-size: cover;
+  background-position: center;
   color: #fff;
   padding: 0 20px;
 }
